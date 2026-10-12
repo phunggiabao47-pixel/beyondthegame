@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
   <meta name="theme-color" content="#071421" />
   <meta name="description" content="DEMO 1 — Beyond the Game, ELL1/2026, Group 04, Hoa Sen University. Interactive sports survey presentation."/>
-  <meta property="og:title" content="Beyond the Game | ELL1 Group 04 — DEMO 1 REV B"/>
+  <meta property="og:title" content="Beyond the Game | ELL1 Group 04 — DEMO 1 REV C"/>
   <meta property="og:description" content="Preview of the interactive 2026 student sports interest survey presentation."/>
-  <title>Beyond the Game | ELL1 Group 04 — DEMO 1 REV B</title>
+  <title>Beyond the Game | ELL1 Group 04 — DEMO 1 REV C</title>
   <style>
 :root{--bg:#071421;--navy:#091b2a;--panel:#122a3a;--panel2:#173345;--stroke:#365165;--lime:#c7f64a;--text:#f4f7f9;--mute:#9db2bf;--soft:#c9d6df;--red:#fd6f6b;--screen-margin:clamp(22px,5.1vw,84px)}
 *{box-sizing:border-box}html,body{margin:0;min-height:100%;font-family:Inter,Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text)}body{overflow:hidden}button{font:inherit}button:focus-visible,a:focus-visible{outline:3px solid var(--lime);outline-offset:3px}button{cursor:pointer}a{color:var(--lime)}#app{height:100svh;min-height:440px;position:relative;overflow:hidden;background:radial-gradient(ellipse at 65% 15%,#16384f 0,transparent 50%),radial-gradient(ellipse at -10% 95%,#174054 0,transparent 45%),linear-gradient(145deg,#06111d,#0c2537 70%,#081722)}
@@ -49,7 +49,7 @@
 @media (max-width:740px){.event-groups{gap:15px}.scene{padding-top:14px}.game-photo{height:36vh}.game-question{font-size:44px}.game-side{padding-bottom:10px}.roster-row small{max-width:100px}.others-strip .other-item{min-width:140px}.roster-row{font-size:17px}.stat-card:last-child{grid-column:1/-1}.team-highlight strong{font-size:60px}}
 
 
-/* ═══════════════════ DEMO 1 · REV B / RESPONSIVE REBUILD ═══════════════════ */
+/* ═══════════════════ DEMO 1 · REV C / RESPONSIVE REBUILD ═══════════════════ */
 #app{isolation:isolate}
 #stage{z-index:1}
 .scene{isolation:isolate}
@@ -172,6 +172,78 @@
 .navigator.open{visibility:visible!important;pointer-events:auto!important;transform:translateX(0)!important}
 
 </style>
+<style id="rev-c-iphone-opening-fix">
+/* DEMO 1 REV C: dedicated phone-only cover composition.
+   Keeps the image, counters and typography in separate normal-flow regions. */
+@media (max-width: 740px) {
+  .opening-scene { padding:18px 17px 26px; min-height:100%; overflow:visible; }
+  .opening-scene .split {
+    display:flex; flex-direction:column; flex:0 0 auto;
+    align-items:stretch; justify-content:flex-start;
+    height:auto; min-height:0; gap:18px;
+  }
+  .opening-scene .hero-copy { flex:0 0 auto; width:100%; z-index:1; }
+  .opening-scene .heading.big {
+    font-size:clamp(52px,14.6vw,68px);
+    line-height:.89; letter-spacing:-.018em;
+    margin:14px 0 14px;
+    overflow-wrap:normal;
+  }
+  .opening-scene .hero-copy .sub {font-size:12px;line-height:1.45;margin:0;max-width:100%;}
+  .opening-scene .hero-bottom {
+    display:grid;grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:8px;margin-top:18px;align-items:stretch;
+  }
+  .opening-scene .micro-stat {
+    min-width:0;min-height:64px;
+    padding:9px 4px 9px 9px;
+    display:flex;flex-direction:column;justify-content:center;
+    border-left:2px solid var(--lime);
+    border-radius:0 5px 5px 0;
+    background:linear-gradient(105deg,#1b3b4b99,#15304155);
+  }
+  .opening-scene .micro-stat strong {
+    font-size:clamp(17px,5.4vw,24px);
+    white-space:nowrap; line-height:1.1; letter-spacing:-.025em;
+  }
+  .opening-scene .micro-stat:last-child strong {font-size:clamp(16px,4.7vw,21px);}
+  .opening-scene .micro-stat small {
+    font-size:8px; letter-spacing:.035em; line-height:1.3;
+    color:#bfd1d9; margin-top:5px;overflow-wrap:normal;
+  }
+  .opening-scene .visual-right {
+    position:relative;flex:0 0 auto;
+    height:clamp(225px,36svh,325px);
+    min-height:225px; max-height:325px;
+    width:100%; overflow:hidden; isolation:isolate;
+    border:1px solid #5e80926e;
+    border-radius:12px;
+    background:radial-gradient(ellipse at 48% 50%,#254f5c,#0c2434 80%);
+  }
+  .opening-scene .visual-right:before { inset:13% 18%; z-index:1;opacity:.55;box-shadow:0 0 70px #c7f64a13; }
+  .opening-scene .visual-right:after {
+    content:"";pointer-events:none;z-index:2;
+    position:absolute;inset:0;
+    background:linear-gradient(180deg,#0714210a 0%,#07142100 55%,#07142188 100%);
+  }
+  .opening-scene .visual-right .hero-photo.secondary {display:none;}
+  .opening-scene .visual-right .player-feature {
+    position:absolute;inset:0;display:block;flex:none;
+    width:100%!important;height:100%!important;
+    max-width:100%!important;max-height:100%!important;
+    min-height:0!important;
+    object-fit:cover!important;object-position:center 0%!important;
+    mask-image:none!important;
+    filter:none!important;
+  }
+}
+@media (max-width:375px) {
+  .opening-scene .heading.big {font-size:clamp(51px,14.1vw,60px);}
+  .opening-scene .hero-bottom {gap:6px;}
+  .opening-scene .micro-stat {padding-left:7px;}
+  .opening-scene .micro-stat small {font-size:7.5px;}
+}
+</style>
 </head>
 <body>
   <div id="app">
@@ -180,13 +252,13 @@
       <button id="jumpBtn" class="identity" title="Choose a slide" aria-label="Open slide navigator">
         <span class="hsu-mark">HSU</span><span class="identity-text"><strong>BEYOND THE GAME</strong><small>ELL1 / GROUP 04 / 2026</small></span>
       </button>
-      <div class="top-actions"><span class="demo-flag"><span class="live-dot"></span> DEMO 1 · REV B</span>
+      <div class="top-actions"><span class="demo-flag"><span class="live-dot"></span> DEMO 1 · REV C</span>
         <button id="languageBtn" class="tiny-button" aria-label="Toggle language">EN <span>⇄</span> VI</button>
         <button id="fullscreenBtn" class="tiny-button" title="Fullscreen">⛶ <span class="action-label">FULLSCREEN</span></button>
       </div>
     </header>
     <main id="stage" aria-live="polite" aria-atomic="true"></main>
-    <div id="wipeOverlay" class="wipe-overlay" aria-hidden="true"><div class="wipe-rim"></div><div class="wipe-content"><small>BEYOND THE GAME · DEMO 1 / REV B</small><strong id="wipeNumber">02</strong><span>ELL1 · GROUP 04</span></div></div>
+    <div id="wipeOverlay" class="wipe-overlay" aria-hidden="true"><div class="wipe-rim"></div><div class="wipe-content"><small>BEYOND THE GAME · DEMO 1 / REV C</small><strong id="wipeNumber">02</strong><span>ELL1 · GROUP 04</span></div></div>
     <footer class="bottom-bar">
       <div class="slide-meta"><span class="status-icon"></span><span id="slideNo">01</span> <span class="meta-slash">/</span> <span id="totalSlides">15</span><span id="slideLabel"> OPENING</span></div>
       <div class="progress-track"><div id="progressFill"></div></div>
@@ -220,7 +292,7 @@ const stat=(val,title,sub)=>`<div class="stat-card"><div class="stat-value">${va
 const bar=(label,val,max=100,caption='')=>`<div class="barline"><span class="barlabel">${label}</span><div class="bartrack"><div class="barfill" style="width:${Math.max(1,100*val/max)}%"></div></div><span class="barpercent">${val}${caption}</span></div>`;
 const c=(abbr,name,score,high,notAware)=>`<div class="event-card"><div class="event-logo" title="Official logo pending verification">${abbr}</div><div><div class="event-name">${name}</div><div class="event-caption">${high}% ${t('rated 4–5','chọn mức 4–5')} · ${notAware} ${t('not aware','chưa biết')}</div><div class="event-meter"><div style="width:${score/5*100}%"></div></div></div><div class="event-score"><strong>${score.toFixed(2)}</strong><small>/ 5</small></div></div>`;
 const sections=[
- {num:'01',label:'OPENING',show(){return `<section class="scene"><div class="split"><div class="hero-copy"><div class="eyebrow">HOA SEN UNIVERSITY · ELL1 / GROUP 04</div><h1 class="heading big">BEYOND<br><em>THE GAME.</em></h1><p class="sub">${t('Sports Interest Among Hoa Sen University Students in 2026','Mức độ quan tâm đến thể thao của sinh viên Đại học Hoa Sen năm 2026')}</p><div class="hero-bottom"><div class="micro-stat"><strong>50</strong><small>${t('RESPONDENTS','PHIẾU KHẢO SÁT')}</small></div><div class="micro-stat"><strong>07</strong><small>${t('SURVEY QUESTIONS','CÂU HỎI')}</small></div><div class="micro-stat"><strong>DEMO 1</strong><small>${t('FOR GROUP REVIEW','CHỜ NHÓM DUYỆT')}</small></div></div></div><div class="visual-right"><img class="hero-photo secondary" src="${pict('vn-xuan-son')}" alt="Vietnamese player"><img class="player-feature" src="${pict('int-ronaldo')}" alt="Football player for presentation cover" style="max-width:100%;height:100%;object-fit:cover;object-position:center 25%;mask-image:linear-gradient(#000 55%,transparent)"></div></div></section>`;}},
+ {num:'01',label:'OPENING',show(){return `<section class="scene opening-scene"><div class="split"><div class="hero-copy"><div class="eyebrow">HOA SEN UNIVERSITY · ELL1 / GROUP 04</div><h1 class="heading big">BEYOND<br><em>THE GAME.</em></h1><p class="sub">${t('Sports Interest Among Hoa Sen University Students in 2026','Mức độ quan tâm đến thể thao của sinh viên Đại học Hoa Sen năm 2026')}</p><div class="hero-bottom"><div class="micro-stat"><strong>50</strong><small>${t('RESPONDENTS','PHIẾU KHẢO SÁT')}</small></div><div class="micro-stat"><strong>07</strong><small>${t('SURVEY QUESTIONS','CÂU HỎI')}</small></div><div class="micro-stat"><strong>DEMO 1</strong><small>${t('FOR GROUP REVIEW','CHỜ NHÓM DUYỆT')}</small></div></div></div><div class="visual-right"><img class="hero-photo secondary" src="${pict('vn-xuan-son')}" alt="Vietnamese player"><img class="player-feature" src="${pict('int-ronaldo')}" alt="Football player for presentation cover" style="max-width:100%;height:100%;object-fit:cover;object-position:center 25%;mask-image:linear-gradient(#000 55%,transparent)"></div></div></section>`;}},
  {num:'02',label:'ABOUT OUR PROJECT',show(){return `<section class="scene">${header('02','INTRODUCTION',t('ABOUT OUR <em>PROJECT</em>','GIỚI THIỆU <em>ĐỀ TÀI</em>'),t('A short survey about sports and football interest at Hoa Sen University.','Khảo sát ngắn về mức độ quan tâm thể thao và bóng đá tại HSU.'))}<div class="stats-grid" style="flex:1">${stat('50',t('Students surveyed','Sinh viên tham gia'),t('Anonymous responses collected in October 2026.','Khảo sát ẩn danh trong tháng 10/2026.'))}${stat('07',t('Survey questions','Câu hỏi khảo sát'),t('Student year, sports, football, competitions, teams and players.','Năm học, thể thao, bóng đá, giải đấu, đội tuyển, cầu thủ.'))}${stat('03′',t('Survey length','Thời gian khảo sát'),t('About three minutes to respond.','Khoảng ba phút để trả lời.'))}</div><div class="note">${t('Method: descriptive results from 50 participants; not a representative census of all HSU students.','Phương pháp: thống kê mô tả 50 phiếu; không đại diện cho toàn bộ sinh viên HSU.')}</div></section>`;}},
  {num:'03',label:'WHO JOINED OUR SURVEY?',show(){return `<section class="scene">${header('03','RESPONDENTS',t('WHO JOINED OUR <em>SURVEY?</em>','AI THAM GIA <em>KHẢO SÁT?</em>'),t('A total of 50 students from different years took part.','Tổng cộng 50 sinh viên thuộc các năm học đã tham gia.'))}<div class="split"><div class="panel" style="display:grid;place-items:center;flex:1;min-height:0"><div class="donut" role="img" aria-label="Year 1 66%, Year 2 6%, Year 3 14%, Year 4+ 14%"><div class="donut-hole"><strong>50</strong><small>${t('STUDENTS','SINH VIÊN')}</small></div></div></div><div class="panel" style="display:flex;flex-direction:column;gap:16px;justify-content:center;flex:1">${[['YEAR 1',33,66,'#c7f64a'],['YEAR 2',3,6,'#5f96a8'],['YEAR 3',7,14,'#2f607c'],['YEAR 4+',7,14,'#133c56']].map(([name,n,p,color])=>`<div class="legend-row"><i style="background:${color}"></i><div style="flex:1"><strong>${name}</strong><small>${n} ${t('students','sinh viên')}</small></div><b style="color:var(--lime);font-size:25px">${p}%</b></div>`).join('')}<div class="note">${t('Most respondents are first-year students.','Phần lớn người tham gia là sinh viên năm nhất.')}</div></div></div></section>`;}},
  {num:'04',label:'FAVORITE SPORTS',show(){return `<section class="scene">${header('04','SPORTS INTEREST',t('FAVORITE <em>SPORTS</em>','CÁC MÔN <em>THỂ THAO</em>'),t('Students could select more than one sport.','Sinh viên có thể chọn nhiều hơn một môn thể thao.'))}<div class="split"><div class="panel" style="display:flex;flex-direction:column;justify-content:center;flex:1"><div class="rowbars">${bar(t('Football','Bóng đá'),46)}${bar('Esports',44)}${bar(t('Badminton','Cầu lông'),38)}${bar(t('Basketball','Bóng rổ'),16)}${bar(t('Volleyball','Bóng chuyền'),10)}</div><p class="note">${t('Percentages do not add up to 100% because multiple answers were allowed.','Các tỷ lệ không cộng thành 100% vì câu hỏi cho chọn nhiều đáp án.')}</p></div><div style="flex:.7;display:flex;flex-direction:column;justify-content:center;align-items:center"><div class="ghost-number" style="color:var(--lime);font-family:Impact,sans-serif;font-size:clamp(125px,15vw,250px);line-height:1">46<span style="font-size:.4em">%</span></div><div class="panel-head">${t('FOOTBALL IS #1','BÓNG ĐÁ DẪN ĐẦU')}</div><p class="sub" style="text-align:center">${t('23 students chose football; Esports is very close with 22.','23 bạn chọn bóng đá; Esports xếp sát với 22 bạn.')}</p><p class="note">${t('Other answers: swimming (2), tennis (1).','Môn khác: bơi (2), tennis (1).')}</p></div></div></section>`;}},

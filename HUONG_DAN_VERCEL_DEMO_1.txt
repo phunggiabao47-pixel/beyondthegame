@@ -1,0 +1,40 @@
+BEYOND THE GAME — ELL1/2026 GROUP 04
+HƯỚNG DẪN TẠO VERCEL PROJECT MỚI — DEMO 1
+
+CÁCH 1 (NHANH NHẤT): VERCEL DROP
+1. Tải file BEYOND_THE_GAME_ELL1_GROUP04_DEMO_1.zip.
+2. Mở trình duyệt và vào https://vercel.com/drop.
+3. Đăng nhập hoặc đăng ký bằng tài khoản của bạn.
+4. Kéo thả hoặc chọn file ZIP của DEMO 1 (không cần giải nén).
+5. Đặt tên project mới, ví dụ beyond-the-game-ell1-group4-demo1 (phụ thuộc tên còn trống).
+6. Chọn tài khoản/nhóm Vercel và nhấn Deploy.
+7. Chờ website được xuất bản, Vercel cấp URL dạng *.vercel.app.
+8. Truy cập URL trên máy tính và điện thoại để kiểm tra, rồi gửi link để duyệt DEMO 1.
+
+LƯU Ý: Mỗi lần tải tệp qua Vercel Drop thường tạo PROJECT MỚI. Nếu muốn cập nhật
+cùng một website và giữ URL, nên kết nối project với GitHub cho các bản sau.
+
+CÁCH 2 (DỄ CẬP NHẬT SAU NÀY): GITHUB + VERCEL
+1. Vào https://github.com/new tạo repository mới.
+2. Giải nén ZIP vào máy.
+3. Trong repository mới, chọn Add file -> Upload files.
+4. Upload toàn bộ: index.html, styles.css, app.js, vercel.json, các file hướng dẫn
+   và cả thư mục assets/ (không chỉ đăng nguyên file ZIP).
+5. Commit changes.
+6. Mở https://vercel.com/new (hoặc Dashboard -> Add New -> Project).
+7. Import repository GitHub vừa tạo, cấp quyền nếu hệ thống hỏi.
+8. Framework Preset: Other; Root Directory: ./; Build Command: bỏ trống;
+   Output Directory: . (nếu Vercel hỏi).
+9. Đặt tên project mới rồi Deploy.
+10. Cập nhật lên GitHub sẽ kích hoạt triển khai lại tự động.
+
+CÁCH SỬ DỤNG DEMO
+- Mũi tên trái/phải, Space: chuyển nội dung.
+- F: bật toàn màn hình nếu trình duyệt hỗ trợ; Esc để thoát.
+- EN/VI: chuyển ngôn ngữ.
+- Điện thoại: chạm nút / vuốt ngang.
+- Mini game: ảnh hiển thị rõ; nhóm nhập tên đáp án đã xác nhận -> Save -> Reveal Answer.
+
+ĐÂY LÀ BẢN DEMO 1, CHƯA PHẢI BẢN HOÀN CHỈNH.
+Chưa có logo HSU chính thức, ảnh/thông tin thành viên, logo giải đấu thật,
+2026 achievements đã xác minh, đáp án game và QR URL chính thức.

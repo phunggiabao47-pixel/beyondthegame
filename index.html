@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#071421" />
+  <meta name="description" content="DEMO 1 — Beyond the Game, ELL1/2026, Group 04, Hoa Sen University. Interactive sports survey presentation."/>
+  <meta property="og:title" content="Beyond the Game | ELL1 Group 04 — DEMO 1"/>
+  <meta property="og:description" content="Preview of the interactive 2026 student sports interest survey presentation."/>
+  <title>Beyond the Game | ELL1 Group 04 — DEMO 1</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div id="app">
+    <div class="ambient-glow" aria-hidden="true"></div>
+    <header class="topbar">
+      <button id="jumpBtn" class="identity" title="Choose a slide" aria-label="Open slide navigator">
+        <span class="hsu-mark">HSU</span><span class="identity-text"><strong>BEYOND THE GAME</strong><small>ELL1 / GROUP 04 / 2026</small></span>
+      </button>
+      <div class="top-actions"><span class="demo-flag"><span class="live-dot"></span> DEMO 1 · PREVIEW</span>
+        <button id="languageBtn" class="tiny-button" aria-label="Toggle language">EN <span>⇄</span> VI</button>
+        <button id="fullscreenBtn" class="tiny-button" title="Fullscreen">⛶ <span class="action-label">FULLSCREEN</span></button>
+      </div>
+    </header>
+    <main id="stage" aria-live="polite" aria-atomic="true"></main>
+    <footer class="bottom-bar">
+      <div class="slide-meta"><span class="status-icon"></span><span id="slideNo">01</span> <span class="meta-slash">/</span> <span id="totalSlides">15</span><span id="slideLabel"> OPENING</span></div>
+      <div class="progress-track"><div id="progressFill"></div></div>
+      <div class="nav-actions"><span class="keys-hint">← → NAVIGATE <span class="keys-desktop">· F FULLSCREEN</span></span>
+        <button id="prevBtn" class="nav-btn" aria-label="Previous scene">←</button>
+        <button id="nextBtn" class="nav-btn primary" aria-label="Next scene">→</button></div>
+    </footer>
+    <aside id="navigator" class="navigator" aria-hidden="true"><div class="navigator-head"><div><span class="eyebrow">PROJECT MAP</span><h3>ALL SCENES</h3></div><button id="closeNav" class="tiny-button" aria-label="Close menu">✕</button></div><div id="navList" class="nav-list"></div></aside>
+  </div>
+  <script src="./app.js" defer></script>
+</body>
+</html>

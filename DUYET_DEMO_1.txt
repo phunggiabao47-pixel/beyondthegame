@@ -1,0 +1,25 @@
+BEYOND THE GAME — ELL1/2026 GROUP 04 — DEMO 1
+
+TRẠNG THÁI: BẢN XEM THỬ ĐỂ DUYỆT, CHƯA PHẢI BẢN CUỐI.
+
+A. ĐÃ TRIỂN KHAI
+- Cấu trúc đủ 12 chủ đề slide, 2 cảnh Credit / Thank You.
+- Màu Navy - Lime - White, phong cách Sports Broadcast.
+- Có số liệu thực tế 50 phản hồi, song ngữ Anh - Việt, các biểu đồ trực quan.
+- Có ảnh các cầu thủ Việt Nam / quốc tế mà nhóm đã cung cấp.
+- Mini game 3 ảnh mức HARD, hiển thị rõ ảnh trước khi đoán.
+- Nút chuyển slide, bàn phím, toàn màn hình, menu slide, phiên bản mobile.
+
+B. CẦN NHÓM XÁC NHẬN TRƯỚC BẢN 2
+- Hình ảnh và bản quyền của các cầu thủ trước khi công khai.
+- Tên 3 cầu thủ trong mini game (chưa có, nên nút Reveal Answer chưa hiển thị đáp án thật).
+- Danh sách, vai trò, ảnh nổi bật từng thành viên để dựng Credits chuẩn Scotland lineup.
+- File logo chính thức Hoa Sen và logo 2026/2027 các giải đấu.
+- Duyệt số liệu, cách xử lý 2 câu trả lời nhiều cầu thủ ở Slide 9.
+- Duyệt bố cục/hiệu ứng/sắp xếp biểu đồ trong từng slide.
+- Mã QR thật tạo sau khi có link Vercel.
+
+C. TRIỂN KHAI
+- Cách nhanh: vào vercel.com/drop, tải ZIP, đặt tên mới, Deploy.
+- Có thể tạo GitHub repository và Import tại vercel.com/new để cập nhật thuận tiện.
+- Xem README.md trong ZIP để có hướng dẫn chi tiết.
